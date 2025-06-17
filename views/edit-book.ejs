@@ -1,0 +1,45 @@
+<% const currentPath = typeof path !== 'undefined' ? path : '/edit-book'; const
+currentTitle = typeof pageTitle !== 'undefined' ? pageTitle : 'Edit Book'; const
+currentErrorMessage = typeof errorMessage !== 'undefined' && errorMessage ?
+errorMessage : null; const currentBook = typeof book !== 'undefined' && book ?
+book : { id: '', title: '', author: '', genre: '' }; let bodyHtml = `
+<h1>Edit Book: ${currentBook.title}</h1>
+`; if (currentErrorMessage) { bodyHtml += `
+<p style="color: red">${currentErrorMessage}</p>
+`; } bodyHtml += `
+<form action="/edit-book/${currentBook.id}" method="POST">
+  <div>
+    <label for="title">Title:</label>
+    <input
+      type="text"
+      id="title"
+      name="title"
+      value="${currentBook.title || ''}"
+      required
+    />
+  </div>
+  <div>
+    <label for="author">Author:</label>
+    <input
+      type="text"
+      id="author"
+      name="author"
+      value="${currentBook.author || ''}"
+      required
+    />
+  </div>
+  <div>
+    <label for="genre">Genre:</label>
+    <input
+      type="text"
+      id="genre"
+      name="genre"
+      value="${currentBook.genre || ''}"
+      required
+    />
+  </div>
+  <button type="submit">Update Book</button>
+  <a href="/books">Cancel</a>
+</form>
+`; %> <%- include('layouts/main-layout.ejs', { body: bodyHtml, pageTitle:
+currentTitle, path: currentPath }) %>

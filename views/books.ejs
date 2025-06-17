@@ -1,0 +1,60 @@
+<%
+  let bodyContent = `<h1>Book List</h1>`;
+
+  bodyContent += `
+    <form action="/books" method="GET" class="filter-form">
+        <div>
+            <label for="genre">Filter by Genre:</label>
+            <select name="genre" id="genre" onchange="this.form.submit()">
+                <option value="">All Genres</option>
+                ${genres.map(genre => `<option value="${genre}" ${selectedGenre === genre ? 'selected' : ''}>${genre}</option>`).join('')}
+            </select>
+        </div>
+        <div>
+            <label for="author">Filter by Author:</label>
+            <select name="author" id="author" onchange="this.form.submit()">
+                <option value="">All Authors</option>
+                ${authors.map(author => `<option value="${author}" ${selectedAuthor === author ? 'selected' : ''}>${author}</option>`).join('')}
+            </select>
+        </div>
+        <div>
+            <label for="status">Filter by Status:</label>
+            <select name="status" id="status" onchange="this.form.submit()">
+                <option value="">All Statuses</option>
+                <option value="read" ${selectedStatus === 'read' ? 'selected' : ''}>Read</option>
+                <option value="unread" ${selectedStatus === 'unread' ? 'selected' : ''}>Unread</option>
+            </select>
+        </div>
+        <a href="/books">Clear Filters</a>
+    </form>
+  `;
+
+  if (books.length > 0) {
+    bodyContent += `<ul>`;
+    books.forEach(book => {
+      const listItemClass = book.readStatus ? 'book-read' : '';
+      bodyContent += `
+        <li class="${listItemClass}">
+            <strong>${book.title}</strong> by ${book.author} (${book.genre})
+            <br>
+            Status: ${book.readStatus ? 'Read' : 'Unread'}
+            <div class="actions">
+                <form action="/mark-read/${book.id}" method="POST" style="display:inline;">
+                    <button type="submit" class="status-btn ${book.readStatus ? 'read' : 'unread'}">
+                        Mark as ${book.readStatus ? 'Unread' : 'Read'}
+                    </button>
+                </form>
+                <a href="/edit-book/${book.id}" class="actions-btn edit-btn">Edit</a>
+                <form action="/delete-book/${book.id}" method="POST" style="display:inline;">
+                    <button type="submit" class="delete-btn">Delete</button>
+                </form>
+            </div>
+        </li>
+      `;
+    });
+    bodyContent += `</ul>`;
+  } else {
+    bodyContent += `<p>No books found. <a href="/add-book">Add a book?</a></p>`;
+  }
+%>
+<%- include('layouts/main-layout.ejs', { body: bodyContent, pageTitle: pageTitle, path: path }) %>

@@ -1,0 +1,270 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    background-color: #f0f2f5;
+    color: #333;
+    line-height: 1.6;
+}
+
+header {
+    background-color: #007bff;
+    color: white;
+    padding: 1rem 0;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: #FFFFFF;
+    background-color: #67B7D1; 
+    text-decoration: none;
+    font-weight: bold;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+nav ul li a:hover,
+nav ul li a.active {
+    background-color: #0056b3;
+}
+
+.container {
+    width: 80%;
+    margin: 20px auto;
+    background-color: #fff;
+    padding: 20px 30px;
+    border-radius: 8px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.1);
+}
+
+h1, h2 {
+    color: #007bff;
+    margin-top: 0;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    padding: 15px;
+    border-bottom: 1px solid #eee;
+    background-color: #fff;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+}
+
+li:last-child {
+    border-bottom: none;
+}
+
+.actions {
+    margin-top: 10px;
+}
+
+.actions button, .actions a {
+    margin-right: 10px;
+    padding: 8px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 0.9em;
+    transition: background-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.actions .delete-btn {
+    background-color: #dc3545;
+    color: white;
+}
+.actions .delete-btn:hover {
+    background-color: #c82333;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+}
+
+.actions .status-btn {
+    background-color: #28a745;
+    color: white;
+}
+.actions .status-btn:hover {
+    background-color: #218838;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+}
+
+.actions-btn.edit-btn {
+    background-color: #ffc107;
+    color: #212529;
+    padding: 8px 15px;
+    border-radius: 4px;
+    text-decoration: none;
+    font-size: 0.9em;
+    transition: background-color 0.2s ease, box-shadow 0.2s ease;
+    display: inline-block;
+    line-height: normal;
+    vertical-align: middle;
+}
+
+.actions-btn.edit-btn:hover {
+    background-color: #e0a800;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+}
+
+.book-read {
+    background-color: #e6ffed;
+    border-left: 5px solid #28a745;
+}
+
+.status-btn.read {
+    background-color: #ffc107;
+    color: #212529;
+}
+
+.status-btn.read:hover {
+    background-color: #e0a800;
+}
+
+.status-btn.unread {
+    background-color: #28a745;
+    color: white;
+}
+
+.status-btn.unread:hover {
+    background-color: #218838;
+}
+
+form div {
+    margin-bottom: 10px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #555;
+}
+
+input[type="text"],
+select {
+    width: calc(100% - 22px);
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 1em;
+}
+
+button[type="submit"], input[type="submit"] {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1em;
+    transition: background-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+button[type="submit"]:hover, input[type="submit"]:hover {
+    background-color: #0056b3;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+}
+
+.filter-form {
+    background-color: #f8f9fa;
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 25px;
+    display: flex;
+    gap: 15px;
+    align-items: flex-end;
+}
+
+.filter-form div {
+    flex: 1;
+    margin-bottom: 0;
+}
+
+.filter-form label {
+    font-size: 0.9em;
+}
+
+.filter-form select,
+.filter-form input[type="submit"],
+.filter-form a {
+    width: auto;
+    padding: 10px 15px;
+}
+
+.filter-form a {
+    background-color: #6c757d;
+    color: white;
+    border-radius: 4px;
+    text-decoration: none;
+    display: inline-block;
+    line-height: normal;
+}
+
+.filter-form a:hover {
+    background-color: #5a6268;
+}
+
+footer {
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 30px;
+    background-color: #343a40;
+    color: white;
+    font-size: 0.9em;
+}
+
+@media (max-width: 768px) {
+    .container {
+        width: 95%;
+        padding: 15px;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+
+    nav ul li a {
+        display: block;
+    }
+
+    .filter-form {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .filter-form div,
+    .filter-form select,
+    .filter-form input[type="submit"],
+    .filter-form a {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .filter-form a {
+        text-align: center;
+    }
+
+    input[type="text"],
+    select {
+        width: calc(100% - 22px);
+    }
+}
