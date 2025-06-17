@@ -42,7 +42,7 @@ Aplikacja do zarządzania kolekcją książek. Umożliwia przeglądanie, dodawan
 ## Wykorzystane Biblioteki Zewnętrzne
 
 - **Express.js**: Framework webowy dla Node.js, używany do budowy aplikacji i obsługi routingu.
-- **EJS (Embedded JavaScript templates)**: Silnik szablonów do generowania dynamicznych stron HTML.
+- **EJS**: Silnik szablonów do generowania dynamicznych stron HTML.
 - **body-parser**: Middleware do parsowania ciała żądań HTTP.
 - **nodemon**: Narzędzie deweloperskie, które automatycznie restartuje aplikację Node.js po wykryciu zmian w plikach.
 
