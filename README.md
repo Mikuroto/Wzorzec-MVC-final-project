@@ -20,8 +20,7 @@ Aplikacja do zarządzania kolekcją książek. Umożliwia przeglądanie, dodawan
 
 ### Wymagania
 
-- Node.js (zalecana wersja LTS, np. 18.x lub nowsza)
-- npm (zazwyczaj instalowany razem z Node.js)
+- Node.js
 
 ### Kroki Uruchomienia
 
