@@ -24,20 +24,16 @@ Aplikacja do zarządzania kolekcją książek. Umożliwia przeglądanie, dodawan
 
 ### Kroki Uruchomienia
 
-1.  **Klonowanie repozytorium (jeśli dotyczy):**
-    ```bash
-    git clone <adres-repozytorium>
-    cd Wzorzec-MVC-final-project
-    ```
+1.  **Klonowanie repozytorium
 
 2.  **Instalacja zależności:**
-    W głównym katalogu projektu uruchom komendę:
+    W głównym katalogu projektu:
     ```bash
     npm install
     ```
 
-3.  **Uruchomienie serwera:**
-    Aby uruchomić aplikację w trybie deweloperskim (z automatycznym przeładowaniem po zmianach dzięki `nodemon`), użyj komendy:
+3.  **Uruchomienie:**
+    Aby uruchomić aplikację:
     ```bash
     npm start
     ```
