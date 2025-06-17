@@ -59,10 +59,10 @@ Projekt opiera się na wzorcu MVC:
     -   `books.ejs`: Widok wyświetlający listę książek oraz formularze filtrowania.
     -   `add-book.ejs`: Widok z formularzem do dodawania nowej książki.
     -   `edit-book.ejs`: Widok z formularzem do edycji istniejącej książki.
-    -   `layouts/main-layout.ejs`: Główny szablon strony, zawierający wspólną strukturę HTML (nagłówek, stopka, nawigacja).
+    -   `layouts/main-layout.ejs`: Główny szablon strony, zawierający wspólną strukturę HTML.
 -   **`public/`**: Katalog na pliki statyczne.
     -   `css/style.css`: Plik CSS zawierający style dla aplikacji.
--   **`package.json`**: Plik konfiguracyjny projektu Node.js, zawierający m.in. listę zależności i skrypty.
+-   **`package.json`**: Plik konfiguracyjny projektu Node.js.
 
 ## Przykładowe Dane Wejściowe
 
