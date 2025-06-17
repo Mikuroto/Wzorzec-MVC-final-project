@@ -54,7 +54,7 @@ Projekt opiera się na wzorcu MVC:
 -   **`controllers/`**:
     -   `bookController.js`: Kontroler odpowiedzialny za logikę biznesową związaną z książkami. Obsługuje żądania HTTP, komunikuje się z modelem w celu pobrania lub modyfikacji danych oraz wybiera odpowiedni widok do wyświetlenia użytkownikowi.
 -   **`models/`**:
-    -   `bookModel.js`: Model reprezentujący dane książek oraz logikę operacji na tych danych (np. pobieranie wszystkich książek, dodawanie, edycja, usuwanie, filtrowanie). W obecnej wersji dane przechowywane są w pamięci (w tablicy).
+    -   `bookModel.js`: Model reprezentujący dane książek oraz logikę operacji na tych danych (np. pobieranie wszystkich książek, dodawanie, edycja, usuwanie, filtrowanie). W obecnej wersji dane przechowywane są w pamięci.
 -   **`views/`**: Katalog zawierający szablony EJS, które są renderowane i wysyłane do przeglądarki użytkownika.
     -   `books.ejs`: Widok wyświetlający listę książek oraz formularze filtrowania.
     -   `add-book.ejs`: Widok z formularzem do dodawania nowej książki.
