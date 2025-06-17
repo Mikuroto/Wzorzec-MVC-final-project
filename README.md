@@ -43,8 +43,8 @@ Aplikacja do zarządzania kolekcją książek. Umożliwia przeglądanie, dodawan
 
 - **Express.js**: Framework webowy dla Node.js, używany do budowy aplikacji i obsługi routingu.
 - **EJS (Embedded JavaScript templates)**: Silnik szablonów do generowania dynamicznych stron HTML.
-- **body-parser**: Middleware do parsowania ciała żądań HTTP (np. danych z formularzy).
-- **nodemon**: Narzędzie deweloperskie, które automatycznie restartuje aplikację Node.js po wykryciu zmian w plikach (używane tylko w trybie deweloperskim).
+- **body-parser**: Middleware do parsowania ciała żądań HTTP.
+- **nodemon**: Narzędzie deweloperskie, które automatycznie restartuje aplikację Node.js po wykryciu zmian w plikach.
 
 ## Struktura Aplikacji
 
