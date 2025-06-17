@@ -2,7 +2,7 @@
 
 ## Opis Projektu
 
-Aplikacja do zarządzania kolekcją książek. Umożliwia przeglądanie, dodawanie, edytowanie, usuwanie oraz filtrowanie książek. Projekt został stworzony w celu demonstracji zastosowania wzorca MVC (Model-View-Controller) w praktyce przy użyciu Node.js i Express.js.
+Aplikacja do zarządzania kolekcją książek. Umożliwia przeglądanie, dodawanie, edytowanie, usuwanie oraz filtrowanie książek. Projekt został stworzony przy użyciu Node.js i Express.js.
 
 ## Funkcjonalności
 
