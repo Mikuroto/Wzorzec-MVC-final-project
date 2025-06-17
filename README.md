@@ -77,6 +77,6 @@ let books = [
 ```
 
 Podczas dodawania nowej książki przez formularz, użytkownik podaje:
-- Tytuł (np. "Władca Pierścieni")
-- Autor (np. "J.R.R. Tolkien")
+- Tytuł (np. "Wiedźmin")
+- Autor (np. "Andrzej Sapkowski")
 - Gatunek (np. "Fantasy")
