@@ -1,4 +1,4 @@
-# Wzorzec MVC - Final Project: Book Management App
+# System zarządzania listą zadań do przeczytania
 
 ## Opis Projektu
 
